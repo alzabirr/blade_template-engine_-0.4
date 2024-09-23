@@ -41,7 +41,8 @@ echo $num1+$num2;
 
 
 @include("component.features")
-@include("component.hero")
+@include("component.hero", ["num1"=>$num1, "num2"=>$num2])
 @include("component.testimonial")
 
 @include("layout.footer")
+@include("page.singup")
