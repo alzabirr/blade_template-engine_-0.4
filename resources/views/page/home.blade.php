@@ -38,6 +38,7 @@ echo $num1+$num2;
 
 <h1>including Child/Subview</h1>
 {{-- component er vitor theke contach,hero,features gula (home page a show hbe ) --}}
+<hr>
 
 
 @include("component.features")
@@ -46,3 +47,18 @@ echo $num1+$num2;
 
 @include("layout.footer")
 @include("page.singup")
+
+
+{{-- if else  --}}
+
+<h1>working with if else </h1>
+
+@php
+    $marks = 80;
+
+@endphp
+
+@if ($marks <= 100 )
+   <h3>A+</h3>
+
+@endif
