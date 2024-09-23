@@ -1,3 +1,4 @@
+@include("layout.header")
 <h1>This is home page</h1>
 
 
@@ -12,7 +13,7 @@
 
 {{2+2}} <br/>
 {{4-1}} <br/> <br/>
-
+<hr>
 {{-- ------------------------------------------------------ --}}
 
 
@@ -26,4 +27,21 @@ $num1 = 10;
 $num2 = 5;
 echo $num1+$num2;
 
+
+
+
+
 @endphp
+
+{{-- --------------------------------------------------------------- --}}
+<hr>
+
+<h1>including Child/Subview</h1>
+{{-- component er vitor theke contach,hero,features gula (home page a show hbe ) --}}
+
+
+@include("component.features")
+@include("component.hero")
+@include("component.testimonial")
+
+@include("layout.footer")
